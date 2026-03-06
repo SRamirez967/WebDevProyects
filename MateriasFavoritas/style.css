@@ -1,0 +1,29 @@
+body {
+    background-color: #9573DE;
+}
+p {
+    font-family: "red hat display", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+h2, h3 {
+    font-family: "bungee display", sans-serif;
+    font-weight: bolder;
+    text-decoration: wavy underline;
+    font-size: 30px;
+}
+#ecuaciones {
+    background-color: #A8B766;
+}
+#estructuras {
+    background-color: #BE9260;
+}
+#redes {
+    background-color: #B76674;
+}
+#infoG {
+    background-color: #BC84CD;
+}
+.trow {
+    background-color: #BF5F8D;
+}
