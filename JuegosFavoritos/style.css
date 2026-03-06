@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+#nav {
+    position: relative;
+    background-color: #374A67;
+    margin-top: 0;
+    font-family: "cascadia mono", sans-serif;
+    color: #EDD9A3;
+    padding-left: 80px;
+    padding-bottom: 12px;
+    box-shadow: 0px 1px 30px #CB9CF2;
+}
+#name {
+    float: left;
+    margin-right: 680px;
+}
+.navb {
+    background-color: #374A67;
+    color: #EDD9A3;
+    margin-right: 4px;
+    margin-top: 12px;
+}
+.intro {
+    background-color: #616283;
+    font-family: "montserrat", sans-serif;
+    line-height: 1.5;
+    color: #EDD9A3;
+    height: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#header {
+    height: 860px;
+}
+#headimg {
+    width: 1185px;
+    margin-top: 28px;
+}
+.game, .game2 {
+    width: 50%;
+    height: 300px;
+    padding-top: 40px;
+    line-height: 1.5;
+}
+.game {
+    float: left;
+    padding-left: 80px;
+}
+.game2 {
+    float: right;
+    padding-right: 80px;
+}
+.info {
+    position: relative;
+    background-color: #374A67;
+    font-family: "montserrat", sans-serif;
+    color: #EDD9A3;
+    height: 460px;
+    box-shadow: 0px 1px 30px #CB9CF2, 0px -1px 30px #CB9CF2;
+}
+.video {
+    overflow: auto;
+    height: 400px;
+}
+video {
+    height: 250px;
+    margin-left: 100px;
+    margin-top: 100px;
+    box-shadow: 8px 8px 0px #EDD9A3;
+}
+.sep {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#sep1 {
+    background-image: url("/imgs/fondo5.jpg");
+    
+}
+#sep2 {
+    background-image: url("/imgs/fondo2.webp");
+}
+#sep3 {
+    background-image: url("/imgs/fondo3.webp");
+}
+#sep4 {
+    background-image: url("/imgs/fondo4.jpg");
+}
+/* Decoraciones adicionales */
+.plano1 {
+    background-color: #616283;
+    height: 200px;
+    width: 25%;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+}
+.plano2 {
+    background-color: #616283;
+    height: 200px;
+    width: 25%;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    margin-left: auto;
+}
+button {
+    background-color: #EDD9A3;
+    border-radius: 4px;
+    font-family: "montserrat", sans-serif;
+    color: #374A67;
+    border: 0;
+    margin-right: 48px;
+    margin-top: 20px;
+    padding: 12px;
+}
+button:hover {
+    background-color: #9E7B9B;
+    color: #EDD9A3;
+}
+.redes {
+    background-color: #616283;
+    color:aliceblue;
+}
