@@ -1,9 +1,10 @@
 body {
     margin: 0px;
-    border: 1px solid;
 }
 #menubar {
     background-color: #48D56B;
+    display: flex;
+    justify-content: space-around;
 }
 #civicapay {
     background-color: #B2D548;
@@ -14,4 +15,48 @@ body {
 }
 #piepagina {
     background-color: #6BD548;
+}
+#main {
+    display: flex;
+}
+#sidebar {
+    border: 3px solid;
+    width: 20%; 
+    background-color: #6B48D5;
+    display: flex;
+    flex-direction: column;
+}
+.bside {
+    margin-top: 32px;
+}
+#info {
+    border: 3px solid;
+    width: 80%;
+    background-color: #6B48D5;
+}
+#top {
+    display: flex;
+}
+#bottom {
+    display: flex;
+}
+#tleft {
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+}
+#tright {
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+}
+#bleft {
+    background-color: azure;
+    width: 500px;
+    height: 500px;
+}
+#bright {
+    background-color: greenyellow;
+    width: 500px;
+    height: 500px;
 }
