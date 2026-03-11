@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intento App Civica</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="menubar">
@@ -27,11 +31,6 @@
             <img src="/imgs/salir.png" title="Salir" alt="Logo salir" width="30">
         </button>
 
-        <!-- Agregamos un form que será la barra de búsqueda de ubicaciones -->
-        <form>
-            <input type="text" placeholder="Buscar ubicaciones...">
-        </form>
-
         <!-- Opciones de usuario -->
         <button>
             <img src="/imgs/logoUsuario.png" title="Usuario" alt="Logo usuario" width="30">
@@ -48,22 +47,38 @@
             <button class="bside">Sacar plata</button>
         </div>
         <div id="info">
-            <h1>Bienvenido de nuevo, [Usuario]!</h1>
+            <h1>Bienvenido de nuevo, [User]!</h1>
             <div id="top">
                 <div id="tleft">
                     <p>Tu saldo targeta cívica</h1>
-                    <button>Recargar targeta cívica</button>
-                    <p>$15770</p>
-                    <p>Perfil</p>
-                    <p>FRECUENTES</p>
-                    <p>No. tarjeta</p>
-                    <p>12394832</p>
+                    <button>Recargar</button>
+                    <p id="saldo">$15.770</p>
+                    <div id="adicional">
+                        <div id="perfil">
+                            <p>Perfil</p>
+                            <p class="data1">FRECUENTES</p>
+                        </div>
+                        <div id="tarjeta">
+                            <p>No. tarjeta</p>
+                            <p class="data1">12394832</p>
+                        </div> 
+                    </div>
                 </div>
-                <div id="tright"></div>
+                <div id="tright">
+                    <p>Operaciones</p>
+                    <button>Viajar con QR</button>
+                    <button>Pagar con QR</button>
+                    <!-- Agregamos un form que será la barra de búsqueda de ubicaciones -->
+                    <form>
+                        <input type="text" placeholder="Buscar ubicaciones...">
+                    </form>
+                    <img src="/imgs/mapa.jpg" title="Elige tu ubicación" alt="Mapa metro" height="300px">
+                </div>
             </div>
             <div id="bottom">
                 <div id="bleft">
                     <p>Movimientos</p>
+                    <button>Ver todos</button>
                     <div class="movimientos">
                         <p>[Estación] - [Transporte]</p>
                         <p>$[Precio]</p>
@@ -89,7 +104,13 @@
                     </div>
 
                 </div>
-                <div id="bright"></div>
+                <div id="bright">
+                    <p>Más servicios</p>
+                    <button>Tienda virtual</button>
+                    <button>Movilidad</button>
+                    <button>Turismo</button>
+                    <button>Oferta financiera</button>
+                </div>
             </div>
         </div>
     </div>
