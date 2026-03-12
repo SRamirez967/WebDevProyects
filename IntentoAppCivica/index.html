@@ -52,13 +52,13 @@
                 <div id="tleft">
                     <p>Tu saldo targeta cívica</h1>
                     <button>Recargar</button>
-                    <p id="saldo">$15.770</p>
+                    <p id="saldo">$15,770</p>
                     <div id="adicional">
-                        <div id="perfil">
+                        <div>
                             <p>Perfil</p>
                             <p class="data1">FRECUENTES</p>
                         </div>
-                        <div id="tarjeta">
+                        <div>
                             <p>No. tarjeta</p>
                             <p class="data1">12394832</p>
                         </div> 
@@ -68,6 +68,7 @@
                     <p>Operaciones</p>
                     <button>Viajar con QR</button>
                     <button>Pagar con QR</button>
+                    <p>Planea tu ruta:</p>
                     <!-- Agregamos un form que será la barra de búsqueda de ubicaciones -->
                     <form>
                         <input type="text" placeholder="Buscar ubicaciones...">
@@ -77,30 +78,63 @@
             </div>
             <div id="bottom">
                 <div id="bleft">
-                    <p>Movimientos</p>
-                    <button>Ver todos</button>
+                    <div id="movTitulo">
+                        <h2>Movimientos</h2>
+                        <button><p>Ver todos</p></button>
+                    </div>
+
+                    <hr>
+                    
                     <div class="movimientos">
-                        <p>[Estación] - [Transporte]</p>
-                        <p>$[Precio]</p>
-                        <p>[DD/MM/AAAA] [HH:MM:SS] AM/PM</p>
+                        <div class="movArriba">
+                            <p>San Antonio - Metro</p>
+                            <p>-$0</p>
+                        </div>
+                        <div class="movAbajo">
+                            <p>12/03/2026 05:15:22 AM</p>
+                            <div id="movDetalles">
+                                <p>Saldo: $13.600</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="movimientos">
-                        <p>[Estación] - [Transporte]</p>
-                        <p>$[Precio]</p>
-                        <p>[DD/MM/AAAA] [HH:MM:SS] AM/PM</p>
+                        <div class="movArriba">
+                            <p>Oriente - Tranvía</p>
+                            <p>-$3.820</p>
+                        </div>
+                        <div class="movAbajo">
+                            <p>12/03/2026 05:15:22 AM</p>
+                            <div id="movDetalles">
+                                <p>Saldo: $13.600</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="movimientos">
-                        <p>[Estación] - [Transporte]</p>
-                        <p>$[Precio]</p>
-                        <p>[DD/MM/AAAA] [HH:MM:SS] AM/PM</p>
+                        <div class="movArriba">
+                            <p>Oriente - Máquina recarga</p>
+                            <p>+$20.000</p>
+                        </div>
+                        <div class="movAbajo">
+                            <p>12/03/2026 05:15:22 AM</p>
+                            <div id="movDetalles">
+                                <p>Saldo: $17.420</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="movimientos">
-                        <p>[Estación] - [Transporte]</p>
-                        <p>$[Precio]</p>
-                        <p>[DD/MM/AAAA] [HH:MM:SS] AM/PM</p>
+                        <div class="movArriba">
+                            <p>San Antonio - Tranvía</p>
+                            <p>-$3.820</p>
+                        </div>
+                        <div class="movAbajo">
+                            <p>12/03/2026 05:15:22 AM</p>
+                            <div id="movDetalles">
+                                <p style="background-color: rgb(252, 108, 103);">Saldo: -$2.580</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>

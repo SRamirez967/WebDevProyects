@@ -57,22 +57,26 @@ button {
     width: 80%;
     background-color: #FFFFFF;
 }
+/*Separacion arriba y abajo*/
 #top {
     display: flex;
+    justify-content: space-between;
 }
 #bottom {
     display: flex;
 }
+/*Parte superior izquierda: Información básica de la tarjeta y recarga*/
 #tleft {
     box-shadow: 10px 10px 50px #f5f5f5;
     border-radius: 10px;
     margin: 20px;
     height: 340px;
 }
+/*Botón de recarga cívica*/
 #tleft button {
     background-color: #06D6A0;
     color: #FFFFFF;
-    margin: 10px 10px 0px 124px;
+    margin: 10px 20px 0px 124px;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
@@ -84,32 +88,89 @@ button {
     background-color: #FFFFFF;
     color: #000000;
 }
+/*Bold para resaltar los valores del saldo, el perfil y el número de tarjeta*/
 .data1 {
     font-weight: bold;
 }
+/*Detalles exclusivos del saldo*/
 #saldo {
     font-family: "raleway";
     font-weight: bold;
     font-size: 40px;
     margin: 0px;
 }
+/*Contenedor de perfil y número de tarjeta*/
 #adicional {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    margin-right: 20px;
 }
-#tarjeta {
-    margin-right: 10px;
-}
+/*Parte superior derecha: Opciones con QR y mapa*/
 #tright {
     width: 500px;
     height: 500px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
 }
+/*Parte inferior izquierda: Registro de movimientos tarjeta cívica*/
 #bleft {
     width: 500px;
     height: 500px;
+    margin: 20px;
 }
+/*Cabecera: Título de la sección y botón*/
+#movTitulo {
+    display: flex;
+    justify-content: space-between;
+}
+#movTitulo button {
+    border: 2px solid;
+    border-color: #06D6A0;
+    background-color: #FFFFFF;
+    color: #06D6A0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+#movTitulo button:hover{
+    background-color: #06D6A0;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+#movTitulo button:active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+/*Registros de movimientos: Lugar y servicio, valor pagado, fecha y hora, saldo restante*/
+.movimientos {
+    margin: 20px 0px; 
+}
+.movArriba {
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.movArriba p {
+    margin: 0px;
+}
+.movAbajo {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.movAbajo p {
+    margin: 0px;
+}
+#movDetalles {
+    text-align: right;
+}
+/*Parte inferior derecha: Servicios adicionales*/
 #bright {
     width: 500px;
     height: 500px;
+    display: flex;
+    flex-direction: column;
 }
