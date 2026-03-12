@@ -81,7 +81,7 @@ button {
 #saldoTitulo button {
     background-color: #06D6A0;
     color: #FFFFFF;
-    margin: 10px 20px;
+    margin: 20px;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
@@ -114,8 +114,6 @@ button {
 /*Parte superior derecha: Opciones con QR y mapa*/
 #tright {
     width: 500px;
-    height: 500px;
-    border: 2px solid;
     display: flex;
     flex-direction: column;
 }
