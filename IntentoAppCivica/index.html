@@ -9,31 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db703935de.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="menubar">
         <!-- Nombre de la aplicación -->
-        <h1>=</h1>
-        <h1>App | Cívica</h1>
-
-        <!-- Agregamos 3 botones: Usuario, Ayuda y Salir 
-        Usuario: Ver información del usuario, beneficios de viaje y cambio de contraseña
-        Ayuda: Información de apoyo para el usuario
-        Salir: Sale de la cuenta de usuario nuevamente a la página de login-->
+        <div id="menuTitulo">
+            <button id="bInicio"><i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i></button>
+            <h1> App | Cívica</h1>
+        </div>
         
-        <button>
-            <img src="/imgs/logoUsuario.png" title="Usuario" alt="Logo usuario" width="30">
-        </button>
-        <button>
-            <img src="/imgs/ayuda.jpg" title="Ayuda" alt="Logo ayuda" width="30">
-        </button>
-        <button>
-            <img src="/imgs/salir.png" title="Salir" alt="Logo salir" width="30">
-        </button>
-
         <!-- Opciones de usuario -->
         <button>
-            <img src="/imgs/logoUsuario.png" title="Usuario" alt="Logo usuario" width="30">
+            <i class="fa-regular fa-user fa-xl" style="color: rgb(255, 255, 255);"></i>
         </button>
     </div>
 
@@ -52,7 +40,7 @@
                 <div id="tleft">
                     <div id="saldoTitulo">
                         <p>Tu saldo targeta cívica</p>
-                        <button>Recargar</button>
+                        <button><i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i> Recargar</button>
                     </div>
                     <p id="saldo">$15,770</p>
                     <div id="adicional">
@@ -68,13 +56,15 @@
                 </div>
                 <div id="tright">
                     <h2>Operaciones</h2>
-                    <button>Viajar con QR</button>
-                    <button>Pagar con QR</button>
-                    <p>Planea tu ruta:</p>
-                    <!-- Agregamos un form que será la barra de búsqueda de ubicaciones -->
-                    <form>
-                        <input type="text" placeholder="Buscar ubicaciones...">
-                    </form>
+                    <button><i class="fa-solid fa-train" style="color: rgb(255, 255, 255);"></i> Viajar con QR</button>
+                    <button><i class="fa-solid fa-qrcode" style="color: rgb(255, 255, 255);"></i> Pagar con QR</button>
+                    <div id="ubicaciones">
+                        <p><i class="fa-solid fa-map-location" style="color: rgb(0, 0, 0);"></i> Planea tu ruta:</p>
+                        <!-- Agregamos un form que será la barra de búsqueda de ubicaciones -->
+                        <form>
+                            <input type="text" placeholder="Buscar ubicaciones...">
+                        </form>
+                    </div>
                     <img src="/imgs/mapa.jpg" title="Elige tu ubicación" alt="Mapa metro" height="150px" width="150px">
                 </div>
             </div>
@@ -82,7 +72,7 @@
                 <div id="bleft">
                     <div id="movTitulo">
                         <h2>Movimientos</h2>
-                        <button><p>Ver todos</p></button>
+                        <button><i class="fa-solid fa-eye" style="color: #06D6A0;"></i> Ver todos</button>
                     </div>
 
                     <hr>
@@ -142,10 +132,11 @@
                 </div>
                 <div id="bright">
                     <h2>Más servicios</h2>
-                    <button>Tienda virtual</button>
-                    <button>Movilidad</button>
-                    <button>Turismo</button>
-                    <button>Oferta financiera</button>
+                    <button><i class="fa-solid fa-shop" style="color: rgb(255, 255, 255);"></i> Tienda virtual</button>
+                    <button><i class="fa-solid fa-bus-side" style="color: rgb(255, 255, 255);"></i> Movilidad</button>
+                    <button><i class="fa-solid fa-plane-arrival" style="color: rgb(255, 255, 255);"></i> Turismo</button>
+                    <button><i class="fa-brands fa-cash-app" style="color: rgb(255, 255, 255);"></i> Oferta financiera</button>
+                    <button><i class="fa-solid fa-lock" style="color: rgb(255, 255, 255);"></i> Bloquear tarjeta cívica</button>
                 </div>
             </div>
         </div>

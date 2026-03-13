@@ -9,52 +9,50 @@ button {
 #menubar {
     background-color: #06D6A0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+#menuTitulo {
+    display: flex;
 }
 #menubar button {
     background-color: #06D6A0;
     color: #FFFFFF;
-    margin-left: 224px;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
 }
 #menubar button:hover {
-    background-color: #60FBD2;
-}
-#civicapay {
-    background-color: #B2D548;
-}
-#civica {
-    background-color: #6B48D5;
-    color: #FFFFFF;
-}
-#piepagina {
-    background-color: #6BD548;
+    background-color: #f5d34c;
 }
 #main {
     display: flex;
 }
 #sidebar {
-    border: 3px solid;
     width: 20%; 
-    background-color: #6B48D5;
+    background-color: #06D6A0;
     display: flex;
     flex-direction: column;
 }
 .bside {
-    background-color: #6B48D5;
-    color: #FFFFFF;
+    background-color: #06D6A0;
+    color: #000000;
     text-align: left;
     padding: 15px;
+    font-size: 14px;
 }
 .bside:hover {
-    background-color: #9a7afa;
+    background-color: #f5d34c;
+}
+.bside:active {
+    background-color: #FFFFFF;
 }
 #info {
-    border: 3px solid;
     width: 80%;
     background-color: #FFFFFF;
+}
+#info h1 {
+    margin: 20px;
 }
 /*Separacion arriba y abajo*/
 #top {
@@ -71,11 +69,12 @@ button {
     border-radius: 10px;
     margin: 20px;
     height: 340px;
-    width: 500px;
+    width: 70%;
 }
 #saldoTitulo {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 /*Botón de recarga cívica*/
 #saldoTitulo button {
@@ -87,7 +86,7 @@ button {
     font-size: 16px;
 }
 #tleft button:hover {
-    background-color: #60FBD2;
+    background-color: #f5d34c;
 }
 #tleft button:active {
     background-color: #FFFFFF;
@@ -113,7 +112,7 @@ button {
 }
 /*Parte superior derecha: Opciones con QR y mapa*/
 #tright {
-    width: 500px;
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
@@ -125,12 +124,24 @@ button {
     color: #FFFFFF;
 }
 #tright button:hover {
-    background-color: #60FBD2;
+    background-color: #f5d34c;
+}
+#tright button:active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+#ubicaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px;
+}
+#ubicaciones input{
+    font-family: "raleway", sans-serif;
 }
 /*Parte inferior izquierda: Registro de movimientos tarjeta cívica*/
 #bleft {
-    width: 500px;
-    height: 500px;
+    width: 70%;
     margin: 20px;
 }
 /*Cabecera: Título de la sección y botón*/
@@ -171,6 +182,7 @@ button {
 }
 .movAbajo {
     font-size: 12px;
+    color: #5C5C5C;
     display: flex;
     justify-content: space-between;
 }
@@ -182,7 +194,7 @@ button {
 }
 /*Parte inferior derecha: Servicios adicionales*/
 #bright {
-    width: 500px;
+    width: 30%;
     margin: 20px 0px;
     border-radius: 5px;
     display: flex;
@@ -196,5 +208,9 @@ button {
     text-align: left;
 }
 #bright button:hover {
-    background-color: #60FBD2;
+    background-color: #f5d34c;
+}
+#bright button:active {
+    background-color: #FFFFFF;
+    color: #000000;
 }
