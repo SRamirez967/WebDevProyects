@@ -11,6 +11,8 @@ button {
     display: flex;
     justify-content: space-between;
     padding: 0px 16px;
+    position: relative;
+    box-shadow: 0px 10px 20px #EBEBEB;
 }
 #menuTitulo {
     display: flex;
@@ -21,6 +23,7 @@ button {
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
+    margin: 20px 0px;
 }
 #menubar button:hover {
     background-color: #f5d34c;
@@ -30,12 +33,12 @@ button {
 }
 #sidebar {
     width: 20%; 
-    background-color: #06D6A0;
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
 }
 .bside {
-    background-color: #06D6A0;
+    background-color: #F5F5F5;
     color: #000000;
     text-align: left;
     padding: 15px;
