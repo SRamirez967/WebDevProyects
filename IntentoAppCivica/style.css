@@ -28,12 +28,21 @@ button {
 #menubar button:hover {
     background-color: #f5d34c;
 }
+#menubar button:active {
+    background-color: #FFFFFF;
+}
 #main {
     display: flex;
 }
 #sidebar {
-    width: 20%; 
+    width: 20%;
+    height: 88vh;
     background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#bsideCont {
     display: flex;
     flex-direction: column;
 }
@@ -48,6 +57,22 @@ button {
     background-color: #f5d34c;
 }
 .bside:active {
+    background-color: #FFFFFF;
+}
+#sideOptions {
+    background-color: #06D6A0;
+    padding: 12px 0px 0px 8px;
+    height: 48px;
+}
+#sideOptions button {
+    background-color: #06D6A0;
+    padding: 10px;
+    border-radius: 5px;
+}
+#sideOptions button:hover {
+    background-color: #f5d34c;
+}
+#sideOptions button:active {
     background-color: #FFFFFF;
 }
 #info {
@@ -216,4 +241,8 @@ button {
 #bright button:active {
     background-color: #FFFFFF;
     color: #000000;
+}
+#ads {
+    display: flex;
+    overflow-x: scroll;
 }
