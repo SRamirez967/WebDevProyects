@@ -246,3 +246,33 @@ button {
     display: flex;
     overflow-x: scroll;
 }
+#ads img {
+    margin: 0px 20px;
+}
+#lugaresCercanos {
+    margin: 0px 20px;
+}
+#sugerencias {
+    display: flex;
+}
+.lugar {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.lugar:hover {
+    background-color: #f5d34c;
+}
+#footer {
+    background-color: #06D6A0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
