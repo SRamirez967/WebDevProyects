@@ -10,9 +10,11 @@ button {
     background-color: #06D6A0;
     display: flex;
     justify-content: space-between;
-    padding: 0px 16px;
-    position: relative;
+    padding: 0px 60px 0px 16px;
+    position: sticky;
+    top: 0;
     box-shadow: 0px 10px 20px #EBEBEB;
+    z-index: 200;
 }
 #menuTitulo {
     display: flex;
@@ -31,8 +33,29 @@ button {
 #menubar button:active {
     background-color: #FFFFFF;
 }
+#useroptions {
+    display: flex;
+}
+.dropdown a {
+    display: block;
+    padding: 12px 8px;
+}
+.dropdown a:hover {
+    background-color: #f5d34c;
+}
+.dropdown .content {
+    display: none;
+    background-color: #F5F5F5;
+    position: absolute;
+    min-width: 100px;
+    border-radius: 5px;
+}
+.dropdown:hover .content {
+    display: block;
+}
 #main {
     display: flex;
+    position: relative;
 }
 #sidebar {
     width: 20%;
@@ -41,6 +64,9 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: sticky;
+    top: 79.875px;
+    z-index: 200;
 }
 #bsideCont {
     display: flex;
@@ -78,6 +104,8 @@ button {
 #info {
     width: 80%;
     background-color: #FFFFFF;
+    position: relative;
+    z-index: 100;
 }
 #info h1 {
     margin: 20px;
@@ -94,10 +122,14 @@ button {
 /*Parte superior izquierda: Información básica de la tarjeta y recarga*/
 #tleft {
     box-shadow: 10px 10px 50px #f5f5f5;
+    color: #FFFFFF;
     border-radius: 10px;
     margin: 20px;
     height: 340px;
     width: 70%;
+    background-image: url("/imgs/cityBG2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #saldoTitulo {
     display: flex;
@@ -197,7 +229,12 @@ button {
 }
 /*Registros de movimientos: Lugar y servicio, valor pagado, fecha y hora, saldo restante*/
 .movimientos {
-    margin: 20px 0px; 
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.movimientos:hover {
+    box-shadow: 10px 10px 20px #f5f5f5, 10px -10px 20px #f5f5f5, -10px 10px 20px #f5f5f5, -10px -10px 20px #f5f5f5;
 }
 .movArriba {
     font-weight: bold;
@@ -245,6 +282,7 @@ button {
 #ads {
     display: flex;
     overflow-x: scroll;
+    margin: 72px 0px;
 }
 #ads img {
     margin: 0px 20px;
@@ -254,6 +292,8 @@ button {
 }
 #sugerencias {
     display: flex;
+    margin-bottom: 72px;
+    justify-content: center;
 }
 .lugar {
     height: 80px;
@@ -275,4 +315,22 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#linea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px 20px 0px;
+}
+#fGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 40px 0px;
+    font-size: 12px;
+}
+#extras {
+    margin-left: 40px;
+    font-size: 10px;
+    color: #5C5C5C;
 }
