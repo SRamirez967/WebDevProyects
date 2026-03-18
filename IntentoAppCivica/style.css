@@ -26,12 +26,13 @@ button {
     border-radius: 5px;
     font-size: 16px;
     margin: 20px 0px;
+    cursor: pointer;
 }
 #menubar button:hover {
     background-color: #f5d34c;
 }
 #menubar button:active {
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
 }
 #useroptions {
     display: flex;
@@ -39,6 +40,7 @@ button {
 .dropdown a {
     display: block;
     padding: 12px 8px;
+    cursor: pointer;
 }
 .dropdown a:hover {
     background-color: #f5d34c;
@@ -78,6 +80,7 @@ button {
     text-align: left;
     padding: 15px;
     font-size: 14px;
+    cursor: pointer;
 }
 .bside:hover {
     background-color: #f5d34c;
@@ -94,12 +97,13 @@ button {
     background-color: #06D6A0;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 #sideOptions button:hover {
     background-color: #f5d34c;
 }
 #sideOptions button:active {
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
 }
 #info {
     width: 80%;
@@ -121,13 +125,13 @@ button {
 }
 /*Parte superior izquierda: Información básica de la tarjeta y recarga*/
 #tleft {
-    box-shadow: 10px 10px 50px #f5f5f5;
+    box-shadow: 10px 10px 50px #F5F5F5;
     color: #FFFFFF;
     border-radius: 10px;
     margin: 20px;
     height: 340px;
     width: 70%;
-    background-image: url("/imgs/cityBG2.png");
+    background-image: url("/imgs/cityBG4.avif");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -135,22 +139,22 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 20px;
 }
 /*Botón de recarga cívica*/
 #saldoTitulo button {
-    background-color: #06D6A0;
-    color: #FFFFFF;
-    margin: 20px;
+    background-color: #f5d34c;
+    color: #000000;
+    cursor: pointer;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
 }
 #tleft button:hover {
-    background-color: #f5d34c;
+    background-color: #FFFFFF;
 }
 #tleft button:active {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #F5F5F5;
 }
 /*Bold para resaltar los valores del saldo, el perfil y el número de tarjeta*/
 .data1 {
@@ -161,14 +165,13 @@ button {
     font-family: "raleway";
     font-weight: bold;
     font-size: 40px;
-    margin: 0px;
+    margin: 0px 20px;
 }
 /*Contenedor de perfil y número de tarjeta*/
 #adicional {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-right: 20px;
+    margin: 100px 20px 0px 20px;
 }
 /*Parte superior derecha: Opciones con QR y mapa*/
 #tright {
@@ -182,12 +185,13 @@ button {
     padding: 15px;
     text-align: left;
     color: #FFFFFF;
+    cursor: pointer;
 }
 #tright button:hover {
     background-color: #f5d34c;
 }
 #tright button:active {
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
     color: #000000;
 }
 #ubicaciones {
@@ -217,6 +221,7 @@ button {
     border-radius: 5px;
     font-size: 14px;
     margin: 10px 0px;
+    cursor: pointer;
 }
 #movTitulo button:hover{
     background-color: #06D6A0;
@@ -224,7 +229,7 @@ button {
     color: #FFFFFF;
 }
 #movTitulo button:active {
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
     color: #000000;
 }
 /*Registros de movimientos: Lugar y servicio, valor pagado, fecha y hora, saldo restante*/
@@ -234,7 +239,7 @@ button {
     border-radius: 5px;
 }
 .movimientos:hover {
-    box-shadow: 10px 10px 20px #f5f5f5, 10px -10px 20px #f5f5f5, -10px 10px 20px #f5f5f5, -10px -10px 20px #f5f5f5;
+    box-shadow: 10px 10px 20px #f5f5f5;
 }
 .movArriba {
     font-weight: bold;
@@ -271,12 +276,13 @@ button {
     font-size: 16px;
     padding: 15px;
     text-align: left;
+    cursor: pointer;
 }
 #bright button:hover {
     background-color: #f5d34c;
 }
 #bright button:active {
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
     color: #000000;
 }
 #ads {
@@ -306,6 +312,7 @@ button {
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    cursor: pointer;
 }
 .lugar:hover {
     background-color: #f5d34c;
