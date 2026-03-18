@@ -285,6 +285,7 @@ button {
     background-color: #F5F5F5;
     color: #000000;
 }
+/* Agregamos los "anuncios" que contienen información adicional sobre el uso de la cívica */
 #ads {
     display: flex;
     overflow-x: scroll;
@@ -293,14 +294,17 @@ button {
 #ads img {
     margin: 0px 20px;
 }
+/* Se colocan los lugares recomendados cerca de la dirección de residencia del usuario (o de su ubicación) */
 #lugaresCercanos {
     margin: 0px 20px;
 }
+/* Contenedor de lugares */
 #sugerencias {
     display: flex;
     margin-bottom: 72px;
     justify-content: center;
 }
+/* Botones con íconos con las sugerencias */
 .lugar {
     height: 80px;
     width: 80px;
@@ -317,6 +321,7 @@ button {
 .lugar:hover {
     background-color: #f5d34c;
 }
+/* Se coloca un pie de página con información adicional de la compañía */
 #footer {
     background-color: #06D6A0;
     display: flex;
@@ -336,6 +341,7 @@ button {
     margin: 0px 0px 40px 0px;
     font-size: 12px;
 }
+/* Última información */
 #extras {
     margin-left: 40px;
     font-size: 10px;
