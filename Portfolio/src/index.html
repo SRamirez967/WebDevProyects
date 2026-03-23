@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation section -->
-    <nav>
-        <h1>NAME</h1>
-        <div>
+    <nav class="flex justify-between bg-green-400 text-amber-50">
+        <h1 class="text-2xl font-extrabold">NAME</h1>
+        <div class="space-x-16">
             <a>Projects</a>
             <a>Skills & technologies</a>
             <a>About me</a>
@@ -18,98 +21,125 @@
     </nav>
 
     <!-- Intro section: Image and brief description -->
-    <section>
-        <img src="/src/imgs/img.jpg">
-        <h1>DESCRIPTION OF THE DEVELOPER</h1>
+    <section class="flex justify-baseline items-center h-dvh bg-[url(/src/imgs/bg.webp)] bg-no-repeat bg-cover bg-center">
+        <img src="/src/imgs/img.jpg" class="h-52 m-28 border-2">
+        <h1 class="text-8xl text-center font-bold text-amber-100">DESCRIPTION OF THE DEVELOPER</h1>
     </section>
 
     <!-- Projects section -->
-    <section>
-        <!-- Project header -->
-        <div>
-            <h1>Some of my WORK</h1>
+    <section class="flex justify-around items-center h-dvh text-amber-50 bg-[url(/src/imgs/bg2.jpg)] bg-no-repeat bg-cover bg-center">
+        <!-- Projects header -->
+        <div class="bg-linear-to-r from-[#0097B2] to-[#7ED967] h-70 text-3xl rounded-md">
+            <h1>Some of my <span class="text-amber-300">WORK</span></h1>
         </div>
 
         <!-- Projects: Image, title, description and button -->
 
         <!-- Project 1 -->
-        <div>
-            <img src="/src/imgs/img.jpg">
-            <h3>TITLE</h3>
+        <div class="bg-linear-to-r from-[#0097B2] to-[#7ED967] p-6 space-y-3 rounded-md">
+            <img src="/src/imgs/img.jpg" class="h-52 w-2xs">
+            <h3 class="font-bold">TITLE</h3>
             <p>Explanation</p>
-            <button>Visit</button>
+            <button class="bg-[#FF443A] px-2 rounded-md">Visit</button>
         </div>
 
         <!-- Project 2 -->
-        <div>
-            <img src="/src/imgs/img.jpg">
-            <h3>TITLE</h3>
+        <div class="bg-linear-to-r from-[#0097B2] to-[#7ED967] p-6 space-y-3 rounded-md">
+            <img src="/src/imgs/img.jpg" class="h-52 w-2xs">
+            <h3 class="font-bold">TITLE</h3>
             <p>Explanation</p>
-            <button>Visit</button>
+            <button class="bg-[#FF443A] px-2 rounded-md">Visit</button>
         </div>
+
     </section>
 
     <!-- Skills section: Icon, title and explanation. Side to side scroll -->
-    <section>
-        <img src="/src/imgs/img.jpg">
-        <h1>Title</h1>
-        <p>Explanation</p>
+    <section class="bg-[url(/src/imgs/bg3.jpeg)] bg-no-repeat bg-cover bg-center h-dvh">
+        <h1 class="text-8xl font-bold text-center">SKILLS & TECHNOLOGIES</h1>
+        <div class="flex justify-around items-center">
+            <img src="/src/imgs/img.jpg" class="h-52 w-2xs m-28 rounded-full">
+            <div class="mr-28 space-y-2">
+                <h1 class="text-4xl text-amber-100">Title</h1>
+                <p class="text-amber-100">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
+            </div>
+        </div>
     </section>
 
     <!-- About me section: Education and hobbies -->
     <section>
-        <h1>ABOUT ME</h1>
+        <h1 class="text-8xl font-bold text-center">ABOUT ME</h1>
 
         <!-- Education section: Images, titles and explanations -->
-        <section>
-            <h1>EDUCATION</h1>
-
-            <div>
-                <img src="/src/imgs/img.jpg">
-                <h3>Title</h3>
-                <p>Explanation</p>
+        <section class="h-dvh bg-[url(/src/imgs/bg4.jpg)] bg-no-repeat bg-cover bg-center">
+            <h1 class="text-8xl font-bold text-center">EDUCATION</h1>
+            <div class="flex justify-around items-center">
+                <img src="/src/imgs/img.jpg" class="h-52 w-2xs m-28 rounded-full">
+                <div class="mr-28 space-y-2">
+                    <h1 class="text-4xl text-black">Title</h1>
+                    <p class="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
+                </div>
             </div>
         </section>
 
         <!-- Hobbies section: Interactive widgets, titles and explanations -->
-        <section>
-            <h1>HOBBIES</h1>
+        <section class="bg-[url(/src/imgs/bg5.jpg)] bg-no-repeat bg-cover bg-center">
+            <h1 class="text-8xl font-bold text-center">HOBBIES</h1>
 
-            <div>
-                <!-- Hobby 1 -->
-                <div>
-                    <img src="/src/imgs/img.jpg">
-                    <h3>Title</h3>
-                    <p>Explanation</p>
+            <!-- Hobby 1 -->
+            <div class="flex justify-around items-center">
+                <img src="/src/imgs/img.jpg" class="h-52 w-2xs m-28 rounded-full">
+                <div class="mr-28 space-y-2">
+                    <h1 class="text-4xl text-black">Title</h1>
+                    <p class="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
                 </div>
-
-                <!-- Hobby 2 -->
-                <div>
-                    <img src="/src/imgs/img.jpg">
-                    <h3>Title</h3>
-                    <p>Explanation</p>
-                </div>
-
-                <!-- Hobby 3 -->
-                <div>
-                    <img src="/src/imgs/img.jpg">
-                    <h3>Title</h3>
-                    <p>Explanation</p>
-                </div>
-
             </div>
-            
+
+            <!-- Hobby 2 -->
+            <div class="flex justify-around items-center">
+                <div class="mr-28 space-y-2 ml-28">
+                    <h1 class="text-4xl text-black">Title</h1>
+                    <p class="text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
+                </div>
+                <img src="/src/imgs/img.jpg" class="h-52 w-2xs m-28 rounded-full">
+            </div>
+
+            <!-- Hobby 3 -->
+            <div class="flex justify-around items-center">
+                <img src="/src/imgs/img.jpg" class="h-52 w-2xs m-28 rounded-full">
+                <div class="mr-28 space-y-2">
+                    <h1 class="text-4xl text-white">Title</h1>
+                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
+                </div>
+            </div>
+
+            <!-- Hobby 4 -->
+            <div class="flex justify-around items-center">
+                <div class="mr-28 space-y-2 ml-28">
+                    <h1 class="text-4xl text-white">Title</h1>
+                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
+                </div>
+                <img src="/src/imgs/img.jpg" class="h-52 w-2xs m-28 rounded-full">
+            </div>
+
+            <!-- Hobby 5 -->
+            <div class="flex justify-around items-center">
+                <img src="/src/imgs/img.jpg" class="h-52 w-2xs m-28 rounded-full">
+                <div class="mr-28 space-y-2">
+                    <h1 class="text-4xl text-white">Title</h1>
+                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
+                </div>
+            </div>
         </section>
     </section>
 
     <!-- Contact / Footer section -->
-    <footer>
+    <footer class="bg-[url(/src/imgs/bg6.jpg)] bg-no-repeat bg-cover bg-center text-amber-50 p-10">
         <!-- Upper section -->
-        <div>
+        <div class="flex justify-between mb-10">
             <!-- Name and image -->
-            <div>
-                <h3>NAME</h3>
-                <img src="/src/imgs/img.jpg">
+            <div class="flex space-x-6">
+                <h3 class="text-4xl">NAME</h3>
+                <img src="/src/imgs/img.jpg" class="h-10 w-10 rounded-full">
             </div>
             
             <!-- Change language and back to top button -->
@@ -120,10 +150,10 @@
         </div>
         
         <!-- Middle section-->
-        <div>
+        <div class="flex space-x-50">
 
             <!-- Contact information-->
-            <div>
+            <div class="flex flex-col">
                 <h3>Contact</h3>
                 <a>Email</a>
                 <a>Instagram</a>
@@ -132,7 +162,7 @@
             </div>
 
             <!-- Navigation links -->
-            <div>
+            <div class="flex flex-col">
                 <h3>Navigation</h3>
                 <a>Projects</a>
                 <a>Skills & technologies</a>
@@ -143,7 +173,7 @@
         </div>
 
         <!-- Lower section -->
-        <div>
+        <div class="mt-10">
             <p>@ NAME. All rights reserved</p>
         </div>
     </footer>
