@@ -7,10 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/db703935de.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Palette. Primary: #ccd5ae. Secondary: #fefae0. Accent 1: #e9edc9. Accent 2: #d5dd94. Aux: #faedcd -->
+
     <!-- Navigation section -->
-    <nav class="flex justify-between items-baseline text-amber-950 p-4 bg-white sticky top-0 z-10">
+    <nav class="flex justify-between items-baseline text-amber-950 bg-white p-4 sticky top-0 z-10">
         <h1 class="text-2xl font-extrabold">NAME</h1>
         <div class="space-x-16">
             <a href="https://www.youtube.com/" target="_blank" class="hover:underline underline-offset-8 decoration-2">Projects</a>
@@ -21,66 +24,81 @@
     </nav>
 
     <!-- Intro section: Image and brief description -->
-    <section class="flex justify-baseline items-center h-dvh bg-[url(/src/imgs/bg8.jpg)] bg-cover bg-center">
+    <section class="flex justify-baseline items-center h-dvh bg-[url(/src/imgs/bg14.webp)] bg-cover bg-center">
         <img src="/src/imgs/placeholder.webp" class="h-52 m-24 border-8 border-amber-50">
-        <h1 class="text-8xl text-center font-bold text-amber-950">DESCRIPTION OF THE DEVELOPER</h1>
+        <h1 class="text-8xl text-center font-bold text-amber">DESCRIPTION OF THE DEVELOPER</h1>
     </section>
 
     <!-- Projects section -->
-    <section class="flex justify-around items-center h-dvh text-amber-50 bg-amber-100">
+    <section class="flex justify-around items-center h-dvh bg-[#ccd5ae]">
         <!-- Projects header -->
-        <div class="flex bg-amber-950 text-amber-50 rounded-b-lg w-2xs h-94 text-wrap text-center items-center">
-            <h1 class="text-8xl">Some <span class="text-7xl">of my</span> <span class="text-amber-300">WORK</span></h1>
+        <div class="flex bg-[#fefae0] text-amber-950 rounded-b-lg w-2xs h-98 text-wrap text-center items-center">
+            <h1 class="text-8xl">Some <span class="text-7xl">of my</span> <span class="text-[#d5dd94]">WORK</span></h1>
         </div>
 
         <!-- Projects: Image, title, description and button -->
 
         <!-- Project 1 -->
-        <div class="bg-white text-amber-950 rounded-b-lg w-2xs text-wrap">
+        <div class="bg-[#fefae0] text-amber-950 rounded-b-lg w-2xs h-98 text-wrap">
             <img src="/src/imgs/placeholder.webp" class="h-52 w-2xs">
             <div class="space-y-3 p-2">
                 <h3 class="font-bold text-2xl">TITLE</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="bg-[#FF443A] px-2 rounded-md hover:bg-[#d8261d] text-amber-50 cursor-pointer">Visit</button>
+                <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <button class="bg-[#e9edc9] px-4 py-2 rounded-md text-amber-950 cursor-pointer transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-[#d5dd94]">
+                    <div class="flex items-center space-x-3">
+                        <p>Visit</p>
+                        <i class="fa-solid fa-up-right-from-square fa-xs" style="color: #461901;"></i>
+                    </div>
+                </button>
             </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="bg-white text-amber-950 rounded-b-lg w-2xs text-wrap">
+        <div class="bg-[#fefae0] text-amber-950 rounded-b-lg w-2xs h-98 text-wrap">
             <img src="/src/imgs/placeholder.webp" class="h-52 w-2xs">
             <div class="space-y-3 p-2">
                 <h3 class="font-bold text-2xl">TITLE</h3>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="bg-[#FF443A] px-2 rounded-md hover:bg-[#d8261d] text-amber-50 cursor-pointer">Visit</button>
+                <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <button class="bg-[#e9edc9] px-4 py-2 rounded-md text-amber-950 cursor-pointer transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-[#d5dd94]">
+                    <div class="flex items-center space-x-3">
+                        <p>Visit</p>
+                        <i class="fa-solid fa-up-right-from-square fa-xs" style="color: #461901;"></i>
+                    </div>
+                </button>
             </div>
         </div>
 
-        <button class="flex bg-white text-black text-3xl font-extrabold rounded-full w-16 h-16 justify-center items-center hover:bg-gray-100 cursor-pointer">></button>
+        <button class="flex bg-[#e9edc9] rounded-full w-16 h-16 justify-center items-center hover:bg-[#d5dd94] cursor-pointer"><i class="fa-solid fa-angle-right fa-xl" style="color: #461901;"></i></button>
 
     </section>
 
     <!-- Skills section: Icon, title and explanation. Side to side scroll -->
-    <section class="bg-amber-200 h-dvh flex flex-col justify-evenly">
-        <h1 class="text-8xl font-bold text-center">SKILLS & TECHNOLOGIES</h1>
-        <div class="flex items-center space-x-8 mx-56 p-8 bg-white rounded-lg">
+    <section class="bg-[#fefae0] h-dvh flex flex-col justify-evenly">
+        <h1 class="text-8xl font-bold text-center text-amber-950">SKILLS & TECHNOLOGIES</h1>
+        <div class="flex items-center space-x-8 mx-56 p-8 bg-[#ccd5ae] rounded-lg">
             <img src="/src/imgs/placeholder.webp" class="h-52 w-52 rounded-full">
             <div class="space-y-2 text-amber-950">
                 <h1 class="text-4xl font-bold">TITLE</h1>
                 <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse asperiores velit aspernatur. Dolorum, atque animi modi beatae obcaecati est ad voluptatum. Earum reprehenderit alias omnis iste aspernatur possimus totam doloremque!</p>
-                <button class="bg-[#FF443A] px-2 rounded-md hover:bg-[#d8261d] text-amber-50 cursor-pointer">Visit</button>
+                <button class="bg-[#fefae0] px-4 py-2 rounded-md hover:bg-[#faedcd] text-amber-950 cursor-pointer">
+                    <div class="flex items-center space-x-3">
+                        <p>Next</p>
+                        <i class="fa-solid fa-angles-right fa-xs" style="color: #461901;"></i>
+                    </div>
+                </button>
             </div>
         </div>
     </section>
 
     <!-- About me section: Education and hobbies -->
-    <section class="bg-amber-500">
-        <div class="flex justify-start items-center text-wrap bg-amber-500 w-20 h-144.5 sticky top-16 z-5 rounded-r-full">
-            <h1 class="text-7xl font-bold text-center text-amber-950 [writing-mode:vertical-lr]">ABOUT ME</h1>
+    <section class="bg-[#ccd5ae]">
+        <div class="flex justify-start items-center text-wrap bg-[#ccd5ae] w-20 h-144.5 sticky top-16 z-5 rounded-r-full">
+            <h1 class="text-7xl font-bold text-center text-amber-950 [writing-mode:vertical-rl]">ABOUT ME</h1>
         </div>
         
         <!-- Education section: Images, titles and explanations -->
-        <section class="h-140.5 bg-amber-100 flex flex-col justify-evenly">
-            <h1 class="text-8xl font-bold text-center">EDUCATION</h1>
+        <section class="h-140.5 bg-[#fefae0] flex flex-col justify-evenly">
+            <h1 class="text-8xl font-bold text-center text-amber-950">EDUCATION</h1>
             <div class="flex items-center space-x-8 mx-56 p-8">
             <img src="/src/imgs/placeholder.webp" class="h-52 w-52 rounded-full">
             <div class="space-y-2 text-amber-950">
@@ -91,8 +109,8 @@
         </section>
 
         <!-- Hobbies section: Interactive widgets, titles and explanations -->
-        <section class="flex flex-col justify-evenly bg-amber-100 py-12">
-            <h1 class="text-8xl font-bold text-center">HOBBIES</h1>
+        <section class="flex flex-col justify-evenly bg-[#fefae0] py-12">
+            <h1 class="text-8xl font-bold text-center text-amber-950">HOBBIES</h1>
 
             <!-- Hobby 1 -->
             <div class="flex items-center space-x-8 mx-56 my-5 p-8">
@@ -142,7 +160,7 @@
     </section>
 
     <!-- Contact / Footer section -->
-    <footer class="bg-amber-200 text-amber-950 px-10 pt-10 pb-2">
+    <footer class="bg-[#ccd5ae] text-amber-950 px-10 pt-10 pb-2">
         <!-- Upper section -->
         <div class="flex justify-between mb-10">
             <!-- Name and image -->
@@ -154,7 +172,7 @@
             <!-- Change language and back to top button -->
             <div class="flex items-center w-40 justify-between">
                 <p class="hover:underline underline-offset-8 decoration-2 cursor-pointer">EN / ES</p>
-                <button class="bg-amber-300 hover:bg-amber-400 p-4 rounded-full cursor-pointer">^</button>
+                <button class="bg-[#fefae0] hover:bg-[#faedcd] p-4 rounded-full cursor-pointer"><i class="fa-solid fa-angle-up fa-xl" style="color: #461901;"></i></button>
             </div>
         </div>
         
@@ -163,7 +181,12 @@
 
             <!-- Contact information-->
             <div class="flex flex-col space-y-3">
-                <h3 class="text-2xl font-bold">Contact</h3>
+                <h3 class="text-2xl font-bold">
+                    <div class="flex items-center space-x-3">
+                        <p>Contact</p>
+                        <i class="fa-solid fa-phone" style="color: #461901;"></i>
+                    </div>
+                </h3>
                 <a href="https://www.youtube.com/" target="_blank" class="hover:underline underline-offset-8 decoration-2">Email</a>
                 <a href="https://www.youtube.com/" target="_blank" class="hover:underline underline-offset-8 decoration-2">Instagram</a>
                 <a href="https://www.youtube.com/" target="_blank" class="hover:underline underline-offset-8 decoration-2">Whatsapp</a>
@@ -172,7 +195,12 @@
 
             <!-- Navigation links -->
             <div class="flex flex-col space-y-3">
-                <h3 class="text-2xl font-bold">Navigation</h3>
+                <h3 class="text-2xl font-bold">
+                    <div class="flex items-center space-x-3">
+                        <p>Navigation</p>
+                        <i class="fa-regular fa-compass" style="color: #461901;"></i>
+                    </div>
+                </h3>
                 <a href="https://www.youtube.com/" target="_blank" class="hover:underline underline-offset-8 decoration-2">Projects</a>
                 <a href="https://www.youtube.com/" target="_blank" class="hover:underline underline-offset-8 decoration-2">Skills & technologies</a>
                 <a href="https://www.youtube.com/" target="_blank" class="hover:underline underline-offset-8 decoration-2">About me</a>
@@ -182,8 +210,9 @@
         </div>
 
         <!-- Lower section -->
-        <div class="mt-10">
-            <p>@ NAME. All rights reserved</p>
+        <div class="flex items-center space-x-3 mt-10">
+            <i class="fa-regular fa-copyright fa-xs" style="color: #461901;"></i>
+            <p>NAME. All rights reserved</p>
         </div>
     </footer>
 
